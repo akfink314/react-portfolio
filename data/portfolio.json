@@ -2,9 +2,9 @@
     "name": "alexandrafinkelstein.org",
     "headerTaglineOne": "Alexandra Finkelstein",
     "showCursor": false,
-    "showBlog": true,
+    "showBlog": false,
     "darkMode": true,
-    "showResume": true,
+    "showResume": false,
     "socials": [
         {
             "id": "1",
