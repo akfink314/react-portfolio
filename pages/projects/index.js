@@ -8,7 +8,7 @@ import data from "../../data/portfolio.json"
 import Head from "next/head";
 import Footer from "../../components/Footer";
 
-const AboutPage = () => {
+const ProjectsPage = () => {
     
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -60,7 +60,7 @@ const AboutPage = () => {
               ref={textOne}
               className="text-3xl tablet:text-6xl laptop:text-5xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
-              (Actually) About Me
+              Projects
             </h1>
         <Footer />
     </div>
@@ -68,4 +68,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProjectsPage;

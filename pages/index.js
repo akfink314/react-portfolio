@@ -101,59 +101,16 @@ export default function Home() {
             */}
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-5xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
           </div>
-
-          <Socials/>
+        </div>
+        <div style={{ display: 'flex'/* ,justifyContent: 'center', alignItems: 'center', */ }}>
+        {<AboutMeCard/>}
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={aboutMeRef}>
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {<AboutMeCard/>}
-            {/*data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))*/}
-          </div>
-        </div>
-        
-        {/* <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
-
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))}
-          </div>
-        </div>*/}
-      
-         
-
-       
-        {/* This button should not go into production 
-        {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
-        */}
-        
 
         <Footer />
       </div>

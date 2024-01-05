@@ -127,32 +127,18 @@ const Header = ({ handleWorkScroll, handleAboutMeScroll, handleAboutScroll, isBl
       >
         <h1
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
-          style={{ paddingLeft: '10px' }} // Add left padding here
+          className={`font-medium cursor-pointer mob:p-2 laptop:p-0 ${
+            theme === "dark" ? "text-white" : "text-black"
+          }`}
+          style={{ paddingLeft: '10px', fontWeight: 'bold' }}
         >
           {name}
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={() => router.push("/about")}>About</Button>
-            {/*
-            <Button onClick={handleAboutMeScroll}> (Actually) About Me</Button>
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>   
-            {showBlog && (<Button onClick={() => router.push("/blog")}>Blog</Button>)}
-            {showResume && (<Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                Resume
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("akfink@umich.edu")}>
-              Contact
-            </Button>
-            */}
+            <Button onClick={() => router.push("/about")}>(Actually) About Me </Button>
+            <Button onClick={() => router.push("/projects")}>Programming Projects</Button>
+            <Button onClick={() => router.push("/resume")}>Formal Resume</Button>
             
             {mounted && theme && data.darkMode && (
               <Button

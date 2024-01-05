@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const AboutMePage = ({ img, name, description, onClick }) => {
+const AboutMe = ({ img, name, description, onClick }) => {
     return (
-      <div>
-        Me!
+      <div style={{ paddingLeft: '10px'}}>
+        <p>Hi!👋My name is Alexandra. I am a senior at the University of Michigan (go blue!)</p>
+        <p>where I study Computer Science and Computational Cognitive Science💻🧠</p>
       </div>
     );
   };
   
-export default AboutMePage;
+export default AboutMe;
