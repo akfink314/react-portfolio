@@ -5,8 +5,9 @@ import React, { useEffect, useState } from "react";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
+import Link from "next/link";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleAboutMeScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -69,7 +70,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  /*<Button onClick={handleWorkScroll}>Work</Button>*/
+                  <Button onClick={handleAboutMeScroll}>About Me</Button>
+                  <Button onClick={handleWorkScroll}>Work</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
@@ -132,7 +134,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         </h1>
         {!isBlog ? (
           <div className="flex">
+            <Button onClick={() => router.push("/about")}>About</Button>
             {/*
+            <Button onClick={handleAboutMeScroll}> (Actually) About Me</Button>
+            <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleAboutScroll}>About</Button>   
             {showBlog && (<Button onClick={() => router.push("/blog")}>Blog</Button>)}
