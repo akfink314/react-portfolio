@@ -11,31 +11,7 @@ import ProjectResume from "../../components/ProjectResume";
 
 const ProjectsPage = () => {
     
-  // Handling Scroll
-  const handleWorkScroll = () => {
-    window.scrollTo({
-      top: workRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-  
 
-  const handleAboutMeScroll = () => {
-    window.scrollTo({
-      top: aboutMeRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleAboutScroll = () => {
-    window.scrollTo({
-      top: aboutRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
   const textOne = useRef();
   useIsomorphicLayoutEffect(() => {
     stagger(
@@ -51,19 +27,26 @@ const ProjectsPage = () => {
         </Head>
         <div className="gradient-circle"></div>
         <div className="gradient-circle-bottom"></div>
-        <div className="container mx-auto mb-10"></div>
+        <div className="container mx-auto mb-10">
         <Header/>
-        <h1
-              ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-5xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
-            >
-              Projects
-            </h1>
+        <div>
+          <div className="mt-5">
+            <h1
+                ref={textOne}
+                className="text-3xl tablet:text-6xl laptop:text-5xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              >
+                Projects
+           </h1>
+          </div>
+        </div>
+
             {/* <ProjectResume
         bullets=data.
         />
         <Footer /> */}
+        <Footer /> 
        
+    </div>
     </div>
     
   );

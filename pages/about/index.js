@@ -24,7 +24,7 @@ const AboutPage = () => {
         </Head>
         <div className="gradient-circle"></div>
         <div className="gradient-circle-bottom"></div>
-        <div className="container mx-auto mb-10"></div>
+        <div className="container mx-auto mb-10">
         <Header/>
         <h1
               ref={textOne}
@@ -33,6 +33,7 @@ const AboutPage = () => {
               About
             </h1>
         <Footer />
+    </div>
     </div>
     
   );
