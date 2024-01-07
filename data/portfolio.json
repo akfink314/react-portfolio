@@ -59,26 +59,21 @@
                 "type": "Full Time",
                 "position": "Frontend Engineer at X",
                 "bullets": "Bullet One, Bullet Two"
-            },
-            {
-                "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-                "dates": "July 2020 - March 2022",
-                "type": "Full Time",
-                "position": "Frontend Engineer at X",
-                "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
             }
         ],
         "education": {
-            "universityName": "University X",
-            "universityDate": "2016-2020",
-            "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+            "universityName": "University of Michigan",
+            "universityDate": "2020-2024",
+            "universityPara": "Description",
+            "universityMajorOne": "Computer Science",
+            "universityMajorTwo": "Computational Cognitve Science"
         },
         "languages": [
-            "Javascript",
-            "HTML5",
+            "C++",
             "CSS",
+            "HTML",
             "Python",
-            "Go"
+            "Typescript"
         ],
         "frameworks": [
             "React",
@@ -86,9 +81,10 @@
             "NodeJs"
         ],
         "others": [
+            "AWS",
             "Figma",
-            "AdobeXD",
-            "AWS"
+            "MongoDB"
+
         ]
     }
 }

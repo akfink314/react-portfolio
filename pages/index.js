@@ -25,33 +25,7 @@ export default function Home() {
   const textThree = useRef();
   const textFour = useRef();
 
-  // Handling Scroll
-  const handleWorkScroll = () => {
-    window.scrollTo({
-      top: workRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-  
-
-  const handleAboutMeScroll = () => {
-    window.scrollTo({
-      top: aboutMeRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleAboutScroll = () => {
-    window.scrollTo({
-      top: aboutRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useIsomorphicLayoutEffect(() => {
+ useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
@@ -60,45 +34,17 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
+    <div>
       <Head>
-
         <title>{data.name}</title>
       </Head>
 
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
-
       <div className="container mx-auto mb-10">
-        <Header
-          handleWorkScroll={handleWorkScroll}
-          handleAboutMeScroll = {handleAboutMeScroll}
-          handleAboutScroll={handleAboutScroll}
-        />
-        <div className="laptop:mt-0 mt-0">
+        <Header/>
+        <div>
           <div className="mt-5">
-            {/* 
-            <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1>
-            <h1
-              ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineFour}
-            </h1>
-            
-            */}
             <h1
               ref={textOne}
               className="text-3xl tablet:text-6xl laptop:text-5xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
@@ -107,11 +53,10 @@ export default function Home() {
             </h1>
           </div>
         </div>
+        
         <div style={{ display: 'flex'/* ,justifyContent: 'center', alignItems: 'center', */ }}>
-        {<AboutMeCard/>}
+          {<AboutMeCard/>}
         </div>
-
-
         <Footer />
       </div>
     </div>
