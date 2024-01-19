@@ -42,9 +42,12 @@ const Header = () => {
        
           <div className="flex">
           <Button onClick={() => router.push("/")}> Home </Button>
-            <Button onClick={() => router.push("/about")}> About </Button>
+          {/*
+                      <Button onClick={() => router.push("/about")}> About </Button>
             <Button onClick={() => router.push("/projects")}> Projects</Button>
             <Button onClick={() => router.push("/resume")}> Resume</Button>
+          */}
+
             
             {mounted && theme && data.darkMode && (
               <Button
