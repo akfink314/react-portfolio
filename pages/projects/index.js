@@ -7,7 +7,6 @@ import data from "../../data/portfolio.json";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import projectData from "../../data/projects.json";
-import cellOne from "./cell_detection_1.jpg";
 
 
 const ProjectsPage = () => {
