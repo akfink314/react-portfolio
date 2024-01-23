@@ -3,14 +3,16 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
+// Local Data
 import data from "../../data/portfolio.json";
+import Link from "next/link";
 
 const Header = () => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name } = data;
+  const { name, showBlog, showResume } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -18,9 +20,14 @@ const Header = () => {
 
   return (
     <>
+    
+      
+
+
+
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" ? "bg-white" : "" // Adjust background color based on theme
+          theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
         <h1
@@ -32,21 +39,29 @@ const Header = () => {
         >
           {name}
         </h1>
-
-        <div className="flex">
+       
+          <div className="flex">
           <Button onClick={() => router.push("/")}> Home </Button>
           <Button onClick={() => router.push("/projects")}> Projects </Button>
+          {/*
+                      <Button onClick={() => router.push("/about")}> About </Button>
+            <Button onClick={() => router.push("/projects")}> Projects</Button>
+            <Button onClick={() => router.push("/resume")}> Resume</Button>
+          */}
 
-          {mounted && theme && (
-            <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-              <img
-                className="h-6"
-                src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                alt={theme === "dark" ? "Moon icon" : "Sun icon"}
-              />
-            </Button>
-          )}
-        </div>
+            
+            {mounted && theme && data.darkMode && (
+              <Button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              >
+                <img
+                  className="h-6"
+                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
+                ></img>
+              </Button>
+            )}
+          </div>
+         
       </div>
     </>
   );
