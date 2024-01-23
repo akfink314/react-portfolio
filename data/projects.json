@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "Steps Toward Reducing Bias in Skin Disease Classification",
+            "description": "Accurately diagnosing skin diseases can be difficult for doctors at first glance and particularly challenging on different skin colors because of bias in datasets and medical textbooks. This computer vision project aims to address this critical issue of accurate skin disease classification using computer vision, leveraging a diverse dataset, convolutional neural network, and prior work in the field to improve diagnostic accuracy and reduce systemic bias in medicine.",
+            "languages": "",
+            "images": ""
+        },
+        {
+            "id": "2",
+            "title": "Groupify",
+            "description": "K-12 Teachers spend a lot of time trying to make groups in the classroom. There are typically a variety of constraints teachers are looking for: Certain students don’t work together, some have already worked together, etc. This poses a challenge more complex than it first may seem, and is in an instance of what is known in discrete mathematics as the social golfer problem (https://en.wikipedia.org/wiki/Social_golfer_problem). Groupify is a React web application based solution for teachers to input constraints and seamlessly create groups. As the Social Golfer Problem is known to be NP-hard, there are no known computationally efficient solutions. Groupify utilizes a greedy algorithm (https://www.sciencedirect.com/science/article/pii/S0377221721007773) to efficiently find an approximated solution. ",
+            "languages": "",
+            "images": ""
+        },
+        {
+            "id": "3",
+            "title": "Personal Website",
+            "description": "This website is my most recent project, using Modern Stack (Next.js + TailwindCSS). The site is hosted on Heroku with a domain made available by GoDaddy.",
+            "languages": "",
+            "images": ""
+        },
+        {
+            "id": "4",
+            "title": "Cell Detection",
+            "description": "Program to process and analyze images of microscope slides, determine the cell count, and detect potential abnormalities using an optimized Gaussian filter (Difference of Gaussians) and binary thresholding. To improve cell detection, I decided to use a binary threshold to convert the image to purple/yellow binary before visualizing the maxima. I first attempted to preprocess by making the image grayscale, but struggled to select sigma values which captured maximas. I also tried to “intensify the intensities” of each pixel above a certain threshold, but struggled to maintain image dimensions. A simple way to “intensify the intensity” (making maxima detection much easier) was to use a binary threshold. This method lost accuracy in counting any cells apart of a “bolb” of cells smushed together, but overall did the best job of approximating the cell count of all pre-processing and sigma values I attempted. In order to determine the number of maximas/cells, I used the output of the find_maxima function which returned the number of detected peaks/cells.",
+            "languages": "C++",
+            "images": ""
+        },
+        {
+            "id": "5",
+            "title": "Amazon Robotics Intern Project",
+            "description": "Developed internal tool for visualization of robotic shuttle movement.",
+            "images": ""
+        }
+
+    ]
+}
