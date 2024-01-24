@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import React from "react";
@@ -11,6 +11,8 @@ import projectData from "../../data/projects.json";
 
 const ProjectsPage = () => {
   const textOne = useRef();
+  const { theme, setTheme } = useState(true);
+  const [mounted, setMounted] = useState(true);
 
   useIsomorphicLayoutEffect(() => {
     stagger(
@@ -73,8 +75,25 @@ const ProjectsPage = () => {
 
         <div className="mb-5 project-item">
           <h3 className="text-lg font-bold">{projectData.projects[3].title}</h3>
+          <div style={{display: "flex"}}>
+            <img
+              src={`/images/cells/cell_detection_1.png`} alt="Cell detection example 1" width="200" height="200"
+            ></img>
+            <img
+              src={`/images/cells/cell_detection_2.png`} alt="Cell detection example 1" width="200" height="200"
+            ></img>
+            <img
+              src={`/images/cells/cell_detection_3.png`} alt="Cell detection example 1" width="200" height="200"
+            ></img>
+            <img
+              src={`/images/cells/cell_detection_4.png`} alt="Cell detection example 1" width="200" height="200"
+            ></img>
+          </div>
           <div>{projectData.projects[3].description}</div>
         </div>
+
+
+
         <div className="mb-5 project-item">
           <h3 className="text-lg font-bold">{projectData.projects[4].title}</h3>
           <div>{projectData.projects[4].description}</div>
