@@ -20,11 +20,6 @@ const Header = () => {
 
   return (
     <>
-    
-      
-
-
-
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
           theme === "light" && "bg-white"
@@ -37,7 +32,6 @@ const Header = () => {
           }`}
           style={{ paddingLeft: '10px', fontWeight: 'bold' }}
         >
-          {name}
         </h1>
        
           <div className="flex">
