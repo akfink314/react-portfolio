@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "title": "Friendship Circle",
+            "description": "I was recently asked to describe (in 250 words or less) my most meaningful experience: I spent 10 years volunteering with The Friendship Circle, an organization dedicated to providing programming and support to children with special needs and their families. In 2021, I was hired to a professional role in the FC community as a program coordinator and behavioral counselor. I spent each day overseeing the well-being of and leading programming for children with special needs as well as a cohort of volunteers. As a part of my training, I was certified in suicide prevention and emotional/behavioral crisis management. Throughout the position, I exercised my ability to apply these learned skills in a high pressure and high stakes environment. After a summer of forging unique relationships and building insurmountable bonds of trust, I truly learned the value of relationships and commitment to others. Many of the relationships I developed were with non-speaking children, meaning I had to use patience and curiosity to find ways to communicate and connect with them. In my role, I wasn’t limited to the title of program coordinator. I played the role of a lifeguard, teacher, therapist, ASL interpreter, parent-liaison, friend, and so much more. I have been fortunate to partake in many engineering teams and professional opportunities, from hack-a-thons to working as a Software Engineer Intern at Amazon Robotics. While debugging complex programs and mastering algorithms is an exciting challenge, there is no position that I am more proud of, and that has equipped me to tackle any challenge in life more than my time working at Friendship Circle."
+        },
+        {
+            "id": "2",
+            "title": "BYOD",
+            "description": ""
+        },
+        {
+            "id": "2",
+            "title": " ",
+            "description": ""
+        }
+    ]
+}

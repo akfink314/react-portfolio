@@ -58,46 +58,63 @@ const ProjectsPage = () => {
           </div>
         </div>
 
-        <div className="mb-5 project-item">
-          <h3 className="text-lg font-bold">{projectData.projects[0].title}</h3>
-          <div>{projectData.projects[0].description}</div>
-        </div>
-
-        <div className="mb-5 project-item">
-          <h3 className="text-lg font-bold">{projectData.projects[1].title}</h3>
-          <div>{projectData.projects[1].description}</div>
-        </div>
-
-        <div className="mb-5 project-item">
-          <h3 className="text-lg font-bold">{projectData.projects[2].title}</h3>
-          <div>{projectData.projects[2].description}</div>
-        </div>
-
-        <div className="mb-5 project-item">
-          <h3 className="text-lg font-bold">{projectData.projects[3].title}</h3>
-          <div style={{display: "flex"}}>
-            <img
-              src={`/images/cells/cell_detection_1.png`} alt="Cell detection example 1" width="200" height="200"
-            ></img>
-            <img
-              src={`/images/cells/cell_detection_2.png`} alt="Cell detection example 1" width="200" height="200"
-            ></img>
-            <img
-              src={`/images/cells/cell_detection_3.png`} alt="Cell detection example 1" width="200" height="200"
-            ></img>
-            <img
-              src={`/images/cells/cell_detection_4.png`} alt="Cell detection example 1" width="200" height="200"
-            ></img>
+        <div  style={{ marginLeft: '20px', marginRight: '20px'}}>
+          <div className="mb-5 project-item">
+            <h3 className="text-lg font-bold">{projectData.projects[0].title}</h3>
+            <div>{projectData.projects[0].description}</div>
           </div>
-          <div>{projectData.projects[3].description}</div>
+
+          <div className="mb-5 project-item">
+            <h3 className="text-lg font-bold">{projectData.projects[1].title}</h3>
+            <div>
+              <img
+              src={'/images/groupify_logo.png'} alt="Groupify Logo" width="200" height="200" style={{ borderRadius: '15px' }}
+              >
+              </img>
+            </div>
+            <div>{/*projectData.projects[1].description*/}
+            K-12 Teachers spend a lot of time trying to make groups in the classroom. 
+            There are typically a variety of constraints teachers are looking for: 
+            Certain students don’t work together, some have already worked together, etc. 
+            This poses a challenge more complex than it first may seem, and is in an instance of what is known in discrete mathematics 
+            as the <a href="https://en.wikipedia.org/wiki/Social_golfer_problem" style={{color: 'blue', textDecoration: "underline"}} >social golfer problem</a>. 
+            Groupify is a React web application based solution for teachers to input constraints and seamlessly create groups. 
+            As the Social Golfer Problem is known to be NP-hard, there are no known computationally efficient solutions. Groupify utilizes a <a href="https://www.sciencedirect.com/science/article/pii/S0377221721007773" style={{color: 'blue', textDecoration: "underline"}} >greedy algorithm</a> to efficiently find an approximated solution.
+            
+            </div>
+          </div>
+
+          <div className="mb-5 project-item">
+            <h3 className="text-lg font-bold">{projectData.projects[2].title}</h3>
+            <div>{projectData.projects[2].description}</div>
+          </div>
+
+          <div className="mb-5 project-item">
+            <h3 className="text-lg font-bold">{projectData.projects[3].title}</h3>
+            <div style={{display: "flex"}}>
+              <img
+                src={`/images/cells/cell_detection_1.png`} alt="Cell detection example 1" width="200" height="200"
+              ></img>
+              <img
+                src={`/images/cells/cell_detection_2.png`} alt="Cell detection example 1" width="200" height="200"
+              ></img>
+              <img
+                src={`/images/cells/cell_detection_3.png`} alt="Cell detection example 1" width="200" height="200"
+              ></img>
+              <img
+                src={`/images/cells/cell_detection_4.png`} alt="Cell detection example 1" width="200" height="200"
+              ></img>
+            </div>
+            <div>{projectData.projects[3].description}</div>
+          </div>
+          <section id="amazonproject">
+          <div className="mb-5 project-item">
+            <h3 className="text-lg font-bold">{projectData.projects[4].title}</h3>
+            <div>{projectData.projects[4].description}</div>
+          </div>
+          </section>
         </div>
 
-
-
-        <div className="mb-5 project-item">
-          <h3 className="text-lg font-bold">{projectData.projects[4].title}</h3>
-          <div>{projectData.projects[4].description}</div>
-        </div>
         <Footer />
       </div>
     </div>
